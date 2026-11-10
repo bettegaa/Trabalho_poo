@@ -30,7 +30,7 @@ public class Principal {
             p2.adicionarPrato(new Combo("Combo Pizza", 45.00, 25));
             controle.registrar(p2);
 
-            // erro tratado: preco negativo
+            
             new PratoExecutivo("Prato Errado", -5.00, 10);
         } catch (PrecoInvalidoException e) {
             System.out.println("[ERRO TRATADO] " + e.getMessage());
